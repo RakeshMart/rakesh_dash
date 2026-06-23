@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: rakesh-mart-admin-push
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
+    envVars:
+      - key: VAPID_PRIVATE_KEY
+        sync: false
+      - key: VAPID_PUBLIC_KEY
+        sync: false
+      - key: VAPID_EMAIL
+        sync: false
+      - key: ADMIN_SECRET
+        sync: false
