@@ -58,7 +58,7 @@ def notify_new_order():
     payload = json.dumps({
         'title': '🛒 New Order - Rakesh Mart',
         'body': f'{customer_name} ne order kiya! ₹{amount}\n{items}',
-        'url': 'https://AAPKA-NEW-GITHUB.github.io/admin-panel/',
+        'url': 'https://rakeshmart.github.io/rakesh_dash/',
         'orderId': order_id
     })
     
